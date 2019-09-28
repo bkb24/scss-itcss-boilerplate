@@ -1,0 +1,10 @@
+$browser-context: 16; // Default browser font size
+
+/// Convert pixels to rems based on the browser default font-size ($context)
+/// @param {number} $pixels - pixels
+/// @param {number} $context - the browser default font size
+@function rem($pixels, $context: $browser-context) {
+	@return #{$pixels/$context}rem;
+}
+
+/// ...
